@@ -36,35 +36,35 @@ const App = () => (
       <Form className="text-left">
         <Row>
           <Col md={4}>
-            <Field name="firstName" />
+            <Field name="firstName" withLoading />
           </Col>
           <Col md={4}>
-            <Field name="lastName" />
+            <Field name="lastName" withLoading />
           </Col>
           <Col md={4}>
-            <Field name="email" />
+            <Field name="email" withLoading />
           </Col>
         </Row>
         <Row>
           <Col md={8}>
-            <Field name="username" />
+            <Field name="username" withLoading />
           </Col>
           <Col md={4}>
-            <Field name="age" type="number" />
+            <Field name="age" type="number" withLoading />
           </Col>
         </Row>
         <Row>
-          <Field name="street1" />
+          <Field name="street1" withLoading />
         </Row>
         <Row>
-          <Field name="street2" />
+          <Field name="street2" withLoading />
         </Row>
         <Row>
           <Col md={6}>
-            <Field name="city" />
+            <Field name="city" withLoading />
           </Col>
           <Col md={2}>
-            <Field name="state" type="select">
+            <Field name="state" type="select" withLoading>
               <option>---</option>
               {(states ?? []).map((state) => (
                 <option value={state.name} key={state.abbreviation}>
@@ -74,7 +74,7 @@ const App = () => (
             </Field>
           </Col>
           <Col md={4}>
-            <Field name="zip" />
+            <Field name="zip" withLoading />
           </Col>
         </Row>
         <Row>
@@ -83,6 +83,7 @@ const App = () => (
               labelText="I accept the terms and conditions"
               name="terms"
               type="checkbox"
+              withLoading
             />
           </Col>
         </Row>
