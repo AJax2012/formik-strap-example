@@ -82,6 +82,7 @@ const App = () => (
                 name="website"
                 labelText="Personal Website URL"
                 type="url"
+                withLoading
               />
             </Col>
           </Row>
